@@ -14,7 +14,11 @@
 #ifndef IRremoteint_h
 #define IRremoteint_h
 
+#if ARDUINO >= 100
+#include <Arduino.h>
+#else
 #include <WProgram.h>
+#endif
 
 // define which timer to use
 //
